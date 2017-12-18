@@ -1,0 +1,15 @@
+body {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-translucent-border {
+  border: 10px solid hsla(0, 0%, 100%, 0.5);
+  background: white;
+  /* Bakcground clip property prevents it from over extending onto the border */
+  background-clip: padding-box;
+  width: 200px;
+  height: 200px;
+}

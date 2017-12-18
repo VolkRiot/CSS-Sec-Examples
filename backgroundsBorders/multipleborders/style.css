@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-multiple-border {
+  width: 200px;
+  height: 200px;
+  background: yellowgreen;
+  /* Box shadow accepts a fourth param for shadow spread and can stack multiple shadows */
+  /* Multiple shadows can be built up thusly */
+  box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;
+  transition: all 1s ease-in-out;
+}
+
+.shadow-grow {
+  box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink,
+    0 2px 5px 15px rgba(0, 0, 0, 0.6);
+}
