@@ -3,6 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .container-multiple-border {
@@ -13,6 +14,16 @@ body {
   /* Multiple shadows can be built up thusly */
   box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;
   transition: all 1s ease-in-out;
+}
+
+.container-stiched {
+  /* Stiched effect with inner border and then outter outline */
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  background: brown;
+  border: 2px dashed white;
+  outline: 10px solid brown;
 }
 
 .shadow-grow {
